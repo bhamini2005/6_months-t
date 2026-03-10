@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            gap: 300px;
+           
+        }
+        .sq{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: myAnimation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+
+            
+        }
+              @keyframes myAnimation {
+        0%   {background-color:red; left:0px; top:0px; transform: rotate(0deg);}
+        /* 25%  {background-color:yellow; left:200px; top:0px; } */
+        50%  {background-color:blue; left:200px; top:200px; transform: rotate(45deg);}
+        75%  {background-color:green; left:0px; top:200px;} 
+         100% {background-color:red; left:0px; top:0px; transform: rotate(180deg);}
+        }
+        .loader{
+            
+            animation: circle 3s linear infinite normal;
+            width:300px;
+            height: 300px;
+            border-radius: 100%;
+            border: 8px solid #f85555;
+        }
+        @keyframes circle {
+            0%{
+            
+                transform: rotate(0deg);
+                border-bottom: white;
+
+            }
+            50%{
+                transform: rotate(45deg) ;
+                border-bottom: white;
+                
+            }
+            100%{
+             
+                transform: rotate(360deg);
+                border-bottom: white;
+
+            }
+        }
+  .pagal{
+    margin-top: 200px ;
+       width: 100px;
+       height: 100px;
+       background-color: #bbc4f6;
+       animation: sqtc 2s linear  infinite;
+
+  }
+  @keyframes sqtc {
+    0%{
+        background-color: #bbc4f6;
+        width: 100px;
+        height: 100px;
+    }
+    25%{
+        background-color:#96a5f7;
+        border-radius: 20px;
+
+    }
+    50%{
+        background-color: #7283e9;
+        border-radius: 100px;
+        width: 20px;
+        height: 20px;
+
+    }
+    75%{
+        background-color: #7283e9;
+        width: 60px;
+        height: 60px;
+    }
+    100%{
+        background-color:#2241ee;
+        width: 100px;
+        height: 100px;
+    }
+    
+  }
+    </style>
+</head>
+<body><div class="main">
+    <div class="sq"></div>
+    <div  class="loader"></div>
+    <div class="pagal"></div>
+    </div>
+</body>
+</html>

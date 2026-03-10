@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-auto-rows: 200px;
+            gap: 10px;
+        }
+        .box{
+            border-radius: 10px;
+            /* text-align: center; */
+            border: 5px solid rgb(198, 83, 83);
+        }
+        #a{
+        /* justify-content: center; */
+         grid-column-start: 1;
+         grid-column-end: 3 ;
+         align-content: center;
+         text-align: center;
+         background-color: antiquewhite;
+        }
+       #b{
+        align-content: start;
+        background-color: aqua;
+        }
+       #c{
+        align-content: end;
+        background-color: rgb(143, 120, 238);
+        }
+       #d{
+        align-content: center;
+        background-color: rgb(189, 148, 98);
+       }
+       #e{
+        background-color: rgb(248, 85, 112);
+        text-align: right;
+       }
+       #f{
+        text-align: center;
+        background-color: lightgreen;
+       }
+       #g{
+        text-align: end;
+        align-content: end;
+        background-color: lightgray;
+        
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box" id="a">box1</div>
+      <div class="box" id="b">box2</div> 
+      <div class="box" id="c">box3</div>
+      <div class="box" id="d">box4</div>
+      <div class="box" id="e">box5</div>
+      <div class="box" id="f">box6</div>
+      <div class="box" id="g">box7</div>
+    </div>
+</body>
+</html>

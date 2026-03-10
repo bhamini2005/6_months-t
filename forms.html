@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: lightgrey;
+            display:flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+        form{
+            margin: 5px;
+            padding: 10px;
+            width: 400px;
+            height: max-content;
+            border: 2px solid black;
+            text-align: center;
+            justify-content: left;
+            text-indent: justify;
+            background-color: rgb(187, 181, 194);
+            border-radius: 10px;
+        
+        }
+        button{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+
+        }
+        .lists{
+            display:flex;
+            background-color: rgb(147, 163, 169);
+            width: 300px;
+            height: max-content;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        marquee{
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <form action="submit">
+         <i class="fa-solid fa-house"></i>
+         <i class="fa-solid fa-check"></i>
+         <h1>Registration Form</h1>
+        <label for="Name">Name:</label>
+        <input type="text" placeholder="Enter Your Name"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Your Password"><br><br>
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="Enter Your Email" required><br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date"><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="lang" value="Male">Male
+        <input type="radio" name="lang" value="Female">Female
+        <input type="radio" name="lang" value="other">other<br><br>
+        <label for="number">Phone Number:</label>
+        <input type="tel" placeholder="Enter Your Phone Number" required><br><br>
+        <label for="city">City:</label>
+                <select>
+                    <option value="delhi">Delhi</option>
+                    <option value="ludhiana">Ludhiana</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="chennai">Chennai</option>
+                </select><br><br>
+        <label for="Description">Description:</label><br>
+        <textarea rows="5" cols="35" placeholder="Description"></textarea><br><br>
+        <label for="terms">Accept Terms and Conditions</label>
+        <input type="checkbox" required><br><br>
+           <button type="submit">Submit</button>
+
+    </form>
+    <div class="lists">
+    <ul>
+        <h1>courses</h1>
+        <li type="square">webdevelopment
+            <ul>
+            <li type="circle">HTML</li>
+            <li type="circle">CSS</li>
+            <li type="circle">JAVASCRIPT</li>
+            </ul>
+         </li>
+         <li type="square">programming
+            <ul>
+            <li type="circle">cpp</li>
+            <li type="circle">java</li>
+            <li type="circle">python</li>
+            </ul>
+         </li>   
+         
+    </ul>
+    </div>  
+
+    <marquee behavior="scroll" direction="left" >
+        Welcome to the registration form. Please fill in your details carefully.
+    </marquee>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* position:fixed; */
+            /* flex-wrap: wrap; */
+            
+        }
+        .p{
+            /* padding: 30px; */
+/* text-align: center; */
+           /* position: relative; */
+           /* top:1000px; */
+            /* margin:2100px 1000px; */
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+            height:1000px;
+            background-color:rgb(2100, 87, 87);
+            /* gap:20px; */
+            /* flex-wrap: wrap; */
+            
+        }
+        
+       
+        .under{
+            /* margin:100px 100px; */
+            background-color: rgb(23, 76, 93);
+            display:flex;
+            justify-content: center;    
+            align-items: center;
+            width: 600px;
+            height:600px;
+            gap:10px;
+            justify-content: space-around;
+        }
+        .under img{
+            border-radius: 10px;
+        }
+        img:hover{
+            box-shadow: 5px 5px 15px black;
+            /* transition: 0.5s; */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="p">
+         <div class="under">
+            <div class="c1"><img src="nat1.jpg" alt="Image 1" height="150px" width="150px"></div>
+            <div class="c2"><img src="nat2.jpg" alt="Image 2" height="150px" width="150px"></div>  
+             <div class="c3"><img src="nat3.jpg" alt="Image 3" height="150px" width="150px"></div> 
+        </div>    
+    </div>
+             
+
+</body>
+</html>

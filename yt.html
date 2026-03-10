@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       .main{
+        background-color: white;
+        width: 1500px;
+        height: 1000px;
+        display: flex;
+       }
+       .aside{
+        width:300px;
+        height: 1000px;
+        background-color: rgb(255, 255, 253);
+        position:sticky;
+
+       }
+       .logo{
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+        
+       }
+       .header{
+        display: flex;
+       gap: none;
+
+    
+       }
+       #b{
+        width: 100px;
+        height: 50px;
+       }
+      p{
+        cursor: pointer;
+      }
+      h3{
+        cursor: pointer;
+      }
+       .subs{
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+       }
+       .you{
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+       }
+       .explore{
+        padding: 10px;
+        border-bottom: 1px solid lightgray;
+       }
+       .content{
+        width: 1200px;
+        height: 1000px;
+        background-color: white;    
+       
+       }
+       .nav{
+         top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+         z-index: 1000;
+         cursor: pointer;
+       }
+       .search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    width: 450px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+   
+}
+
+.search-btn,
+.mic-btn {
+    padding: 10px 12px;
+    border-radius: 30px;
+    border: none;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+.create, .user{
+   
+    border-radius: 10px;
+    background-color: lightgray;
+    border: none;
+    width: fit-content;
+    height: 30px;
+    cursor:pointer;
+    text-align: center;
+    font-size: medium;
+}
+
+.rightbar{
+    align-items: center;
+    display: flex;
+    gap: 15px;
+    padding-left: 300px;
+    justify-content: center;
+}
+.topbar{
+    cursor: pointer;
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 0.3fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 15px;
+}
+.box{   
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 350px;
+    gap: 20px
+
+}
+.image{
+    cursor: pointer;
+    padding: 9px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 8px ;
+   border: none;
+   transition: 0.2 ease-in-out;
+}
+.detail{
+    display: flex;
+}
+img{
+    border-radius: 10px;
+    width: 100%;
+    height: 60%;
+}
+#a{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    
+}
+.description{
+    text-align: center;
+    
+}
+h4{
+    cursor: pointer;
+    margin: 0;
+    /* align-content: left;
+    height: 0px; */
+}
+#aa{
+    text-align: start;
+    padding-left: 18px;
+    justify-content: start;
+}
+.views{
+    padding-left: 18px;
+    display: flex;
+    gap: 10px
+}
+p:hover{
+    background-color: lightgray;
+    width: 100px;
+    padding: 3px;
+    border-radius: 8px;
+}
+
+.image:hover{
+    background-color: mistyrose;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.box:hover{
+    background-color: lightgray;
+    padding: 2px;
+     border-radius: 8px;
+
+}
+h3:hover{
+    background-color: lightgray;
+    padding: 2px;
+     width: 180px;
+      border-radius: 8px;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="aside">
+            <div class="logo">
+                <div class="header">
+               <span><i class="fa-solid fa-bars"></i>    <img id="b" src="YouTube-Logo.png" alt="logo"></span>
+               </div>
+                <p><i class="fa-solid fa-house"></i> Home</p>
+                <p><i class="fa-solid fa-video"></i> Shorts</p>
+            </div>
+            <div class="subs">
+                <h3>Subscriptions <i class="fa-solid fa-angle-right"></i></h3>
+                <p><i class="fa-solid fa-circle-user"></i> John</p>
+                <p><i class="fa-solid fa-circle-user"></i> Riya</p>
+                <p><i class="fa-solid fa-circle-user"></i> Arshita</p>
+                <p><i class="fa-solid fa-circle-user"></i> Divyanshi</p>
+                <p>Show More <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div class="you">
+                <h3>You <i class="fa-solid fa-angle-right"></i></h3>
+                <p><i class="fa-solid fa-clock-rotate-left"></i> History</p>
+                <p><i class="fa-solid fa-music"></i> Playlist</p>
+                <p><i class="fa-regular fa-clock"></i> Watch Later</p>
+                <p><i class="fa-solid fa-thumbs-up"></i> Liked</p>
+                <p>Show More <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+            <div class="explore">
+                <h3>Explore <i class="fa-solid fa-angle-right"></i></h3>
+                <p><i class="fa-solid fa-bag-shopping"></i> Shopping</p>
+                <p><i class="fa-solid fa-music"></i> Music</p>
+                <p><i class="fa-solid fa-clapperboard"></i> Movies</p>
+                <p>Show More <i class="fa-solid fa-angle-down"></i></p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="nav">
+            <div class="search-container">
+              <input type="text" placeholder="Search🔍">
+              <button class="mic-btn"><i class="fa-solid fa-microphone"></i></button>
+              <div class="rightbar">
+                 <button class="create"><i class="fa-solid fa-plus"></i> create</button>
+              <pre> <i class="fa-solid fa-bell"></i></pre>
+              <button class="user" ><i class="fa-solid fa-user"></i></button>
+              </div>
+             </div>
+             </div>
+             <div class="topbar">
+                 <div class="box" id="ab">All</div>
+                 <div class="box" id="bc">Music</div> 
+                 <div class="box" id="cd">Movies</div>
+                 <div class="box" id="de">Gaming</div>
+                 <div class="box" id="ef">BTS</div>
+                 <div class="box" id="fg">StandUp Comedy</div>
+                 <div class="box" id="gh">Live</div>
+            </div>
+            <div class="container">
+             <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+              <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+             <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+             <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+             <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+             <div class="image">
+                    <img src="OIP (2).jpg" alt="image not found">
+            
+                <div class="detail">
+                <div class="profile">
+                     <img id="a" src="img.jpg" alt="image not found">
+                </div>
+                <div class="description">
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                    <pre id="aa">Slayy Point <i class="fa-solid fa-circle-check"></i></pre>
+                    <div class="views">
+                      <div id="ee">74k views</div>
+                      <div id="ff">22 minutes ago</div>
+                    </div>
+                </div>
+                 
+             </div>
+            </div>
+            </div>
+           
+                 
+             </div>
+            </div>
+
+    
+</body>
+</html>
